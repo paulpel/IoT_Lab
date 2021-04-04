@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INFO</title>
+</head>
+<body style="background-color:rgba(31,50,121,0.5);margin:auto;width:90%;border:3px black;padding: 10px;">
+    <div style="margin-right:30px;">
+        <h1 style="color:Navy">OVERALL</h1>
+        <p1>Port: {{variable['overall']['port']}}</p1>
+        <br>
+        <p1>Adress http: {{variable['overall']['adress_http']}} </p1>
+        <br>
+        <p1>Adress mqtt: {{variable['overall']['adress_mqtt']}}</p1>
+        <br>
+        <p1>Topic mqtt: {{variable['overall']['topic_mqtt']}}</p1>
+        <br>
+        <p1>Char chain: {{variable['overall']['char_chain']}}</p1>
+        <br>
+        <p1>Killing Mosquito lamp is: {{variable['overall']['heater']}}</p1>
+        <form action="/settings">
+            <input type="submit" value="Go to SETTINGS"/>
+        </form>
+        <form action="/Heater">
+            <input type="submit" value="Lampa na komary On / Off"/>
+        </form>
+         <form action="/fetchData">
+        <button type="submit">Fetch Data</button>
+        </form>
+    </div>
+
+    <div style="float:left;margin-right:30px;">
+        <h1 style="color:Navy">APP 1</h1>
+        <p1 style="color:white">Online Status: {{variable['app_one']['stop']}}</p1>
+        <br>
+        <p1>Frequency: {{variable['app_one']['freq']}}</p1>
+        <br>
+        <p1>Send by: {{variable['app_one']['send_type']}}</p1>
+        <br>
+        <p1>Multiplier: {{variable['app_one']['multiplier']}}</p1>
+        <br>
+        <p1>Data avg: {{variable['app_one']['avg']}}</p1>
+        <br>
+        <p3>{{variable['app_one']['kom']}}</p3>
+        <form action="/getDataOne">
+            <input type="submit" value="Get Data form 1"/>
+        </form>
+    </div>
+
+    <div style="float:left;margin-right:30px;">
+        <h1 style="color:Navy">APP 2</h1>
+        <p1 style="color:white">Online Status: {{variable['app_two']['stop']}}</p1>
+        <br>
+        <p1>Frequency: {{variable['app_two']['freq']}}</p1>
+        <br>
+        <p1>Send by: {{variable['app_two']['send_type']}}</p1>
+        <br>
+        <p1>Multiplier: {{variable['app_two']['multiplier']}}</p1>
+        <br>
+        <p1>Data avg: {{variable['app_two']['avg']}}</p1>
+        <br>
+        <form action="/getDataTwo">
+            <input type="submit" value="Get Data form 2"/>
+        </form>
+    </div>
+
+    <div style="float:left;margin-right:30px;">
+        <h1 style="color:Navy">APP 3</h1>
+        <p1 style="color:white">Online Status: {{variable['app_three']['stop']}}</p1>
+        <br>
+        <p1>Frequency: {{variable['app_three']['freq']}}</p1>
+        <br>
+        <p1>Send by: {{variable['app_three']['send_type']}}</p1>
+        <br>
+        <p1>Multiplier: {{variable['app_three']['multiplier']}}</p1>
+        <br>
+        <p1>Data avg: {{variable['app_three']['avg']}}</p1>
+        <br>
+        <form action="/getDataThree">
+            <input type="submit" value="Get Data form 3"/>
+        </form>
+    </div>
+
+    <div style="float:left;margin-right:30px;">
+        <h1 style="color:Navy">APP 4</h1>
+        <p1 style="color:white">Online Status: {{variable['app_four']['stop']}}</p1>
+        <br>
+        <p1>Frequency: {{variable['app_four']['freq']}}</p1>
+        <br>
+        <p1>Send by: {{variable['app_four']['send_type']}}</p1>
+        <br>
+        <p1>Multiplier: {{variable['app_four']['multiplier']}}</p1>
+        <br>
+        <p1>Data avg: {{variable['app_four']['avg']}}</p1>
+        <br>
+        <form action="/getDataFour">
+            <input type="submit" value="Get Data form 4"/>
+        </form>
+    </div>
+
+    <div style="float:left;margin-right:30px;">
+        <h1 style="color:Navy">APP 5 </h1>
+        <p1 style="color:white">Online Status: {{variable['app_five']['stop']}}</p1>
+        <br>
+        <p1>Frequency: {{variable['app_five']['freq']}}</p1>
+        <br>
+        <p1>Send by: {{variable['app_five']['send_type']}}</p1>
+        <br>
+        <p1>Multiplier: {{variable['app_five']['multiplier']}}</p1>
+        <br>
+        <p1>Data avg: {{variable['app_five']['avg']}}</p1>
+        <br>
+        <form action="/download">
+            <input type="submit" value="Get Data form 5"/>
+        </form>
+    </div>
+
+
+
+</body>
+</html>

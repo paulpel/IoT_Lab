@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SETTINGS</title>
+</head>
+
+<body style="background-color:rgba(31,90,11,0.5);margin:auto;width:90%;border:3px black;padding: 10px;">
+    <h1 style="color:Navy">Download Data!</h1>
+
+    <p>Fill the blank text fields to get data from the part of time which You would like to.
+    After that click |Download|. Happy day!
+    <p>
+
+
+     <form method="post" action="/setPara">
+         <label for="appToDownload">Which app:</label>
+    <input type="text" id="appToDownload" name="appToDownload" placeholder="ex. 1">
+        <br>
+    <label for="day0">Day(in number):</label>
+    <input type="text" id="day0" name="day0" placeholder="ex. 5">
+        <br>
+    <label for="month0">Month:</label>
+    <input type="text" id="month0" name="month0" placeholder="ex. 05">
+        <br>
+    <label for="year0">Year:</label>
+    <input type="text" id="year0" name="year0" placeholder="ex. 2021">
+        <br>
+    <label for="start0">Start Hour:</label>
+    <input type="text" id="start0" name="start0" placeholder="ex. 18:00">
+        <br>
+    <label for="end0">End Hour:</label>
+    <input type="text" id="end0" name="end0" placeholder="ex. 19:20">
+        <br>
+    <button type="submit">Set Parametrs</button>
+    <br>
+
+        <br>
+        <a href="http://127.0.0.1:5005/download" style="text-decoration: none; background-color: #000; color: #fff; padding: 10px 20px 10px 20px;
+    border-radius: 5%; align: center; ">Pobierz plik</a>
+         <br>
+        <br>
+        <br>
+        <a href="http://127.0.0.1:5005/downloadPlot" style="text-decoration: none; background-color: #000; color: #fff; padding: 10px 20px 10px 20px;
+    border-radius: 5%; align: center; ">Pobierz wykres</a>
+
+<br>
+ <form action="/info">
+     <br>
+    <button type="submit"><- Info</button>
+ </form>
+
+</body>
+</html>
